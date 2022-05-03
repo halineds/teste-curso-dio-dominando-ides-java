@@ -7,16 +7,15 @@ public class Gato {
 	private String cor;
 	private Integer idade;
 
-	public Gato() {
-	}
 
 	public Gato(String nome, String cor, Integer idade) {
-		super();
 		this.nome = nome;
 		this.cor = cor;
 		this.idade = idade;
 	}
 
+	public Gato() {}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -58,10 +57,13 @@ public class Gato {
 		return Objects.equals(cor, other.cor) && Objects.equals(idade, other.idade) && Objects.equals(nome, other.nome);
 	}
 
-@Override
-public String toString() {
-	return "Gato [nome=" + nome + ", cor=" + cor + ", idade=" + idade + "]";
+	@Override
+	public String toString() {
+		return "Gato [nome=" + nome + ", cor=" + cor + ", idade=" + idade + "]";
+	}
+	
 }
+	
 
 /*
  * public Gato (String nome, String cor, Integer idade) { this.nome = nome;
